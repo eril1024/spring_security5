@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+	xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+      http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--  
+	*누군가는 스프링 시큐리티
+	1. /login - 누군가가 로그인페이지를 응답해주고 있다.
+	2. /login - 누군가가 처리해 주고 있다.
+	3. /login - 누군가가 낚아 채고 있음(why : 내가 컨트롤러에서 처리 하고 있지않으므로)
+	-->
+	
+	<http>
+		<form-login />
+	</http>
+	
+	<!-- provider -->
+	<authentication-manager>
+	
+	</authentication-manager>
+
+</beans:beans>
